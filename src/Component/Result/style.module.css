@@ -1,9 +1,11 @@
 .input{
-    background-color: #A888B5;
+    background-color: #a1a290;
     width: 200px;
-    height: 35px;
+    height: 60px;
     font-size: 30px;
     font-weight: bold;
     border-radius: 5px; 
-    color:#441752;
+    color:#edf2fa;
+
+    
 }
