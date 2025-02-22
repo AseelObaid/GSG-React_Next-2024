@@ -1,0 +1,29 @@
+.container {
+    width: 280px;
+    background-color: #EFB6C8;
+    padding: 30px 0;
+    border-radius: 5PX;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    row-gap: 10px;
+    justify-content: space-evenly;
+    padding-top: 20px;
+}
+
+.btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    color: white;
+}
+
+.operationsBtn {
+    background-color: #A888B5;
+}
+
+.numbersBtn {
+    background-color: #441752;
+}
