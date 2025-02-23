@@ -19,8 +19,13 @@
     width: 50px;
     height: 50px;
     color: #939496;
-
+    font-weight: bold;
+    font-size: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
 }
+
 
 .opertionbtn {
     background-color: #c4aa95;

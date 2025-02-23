@@ -5,8 +5,8 @@ import Result from "../Result/Result";
 
 
 const Numbers = () => {
-    const numbersButton = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0", "+", "-"];
-    const opertion = ["=", "/", "*", "C", "⌫"]
+    const numbersButton = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "0"];
+    const opertion = [ "+", "-","=", "/", "*", "C", "⌫"]
     const buttons = [...numbersButton, ...opertion]
     const [inputs, setInputs] = useState<string>("");
     const [isResults, setIsResults] = useState<boolean>(false);
