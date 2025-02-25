@@ -1,0 +1,24 @@
+.inputTask {
+    height: 30px;
+    border-radius: 5px;
+    background-color: #dbe2ef;
+    border: 0.5px solid gray;
+    text-align: center;
+    width: 350px;
+}
+
+.contanier {
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.addtaskbtn {
+    height: 30px;
+    width: 50px;
+    border: 0.5px solid gray;
+    color: white;
+    font-size: 25px;
+    background-color: #5c9967;
+}
