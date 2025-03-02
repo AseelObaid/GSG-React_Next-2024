@@ -7,16 +7,16 @@ import { useState } from "react";
 import CheckIcon from '@mui/icons-material/Check';
 
 interface Iprops {
-    handleAllTasks: (value: string) => void
+    handleAddTask: (value: string) => void
 }
 function Form(props: Iprops) {
     const [success, setSuccess] = useState(false);
     const formik = useFormik({
         initialValues: INITAILVALUES,
         onSubmit: (values) => {
-            props.handleAllTasks(values.Todo);
+            props.handleAddTask(values.taskName);
             setSuccess(true);
-            setTimeout(() => setSuccess(false), 2000);
+            setTimeout(() => setSuccess(false), 1000);
             formik.resetForm()
         }, validationSchema: ValidationSchema,
     });
@@ -31,19 +31,14 @@ function Form(props: Iprops) {
             <form onSubmit={formik.handleSubmit} className={classes.contanier}>
 
 
-                <input type="text" name="Todo" value={formik.values.Todo} placeholder="Add New Task..." onChange={formik.handleChange} className={classes.inputTask} />
+                <input type="text" name="taskName" value={formik.values.taskName} placeholder="Add New Task..." onChange={formik.handleChange} className={classes.inputTask} />
+
                 {
-                    formik.errors.Todo && formik.touched && (
-                        <div style={{ color: 'red' }}>{formik.errors.Todo}</div>
+                    formik.errors.taskName && formik.touched.taskName && (
+                        <div style={{ color: 'red' }}>{formik.errors.taskName}</div>
                     )
                 }
-
-
-
                 <button className={classes.addtaskbtn} type="submit" >+</button>
-
-
-
 
             </form>
         </>

@@ -1,0 +1,19 @@
+.counter {
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px;
+}
+.counter div {
+    width: 120px;
+    height: 120px;
+    border-radius: 15px;
+    padding: 10px;
+    box-sizing: border-box;
+    text-align: center;
+}
+.countAllTask { background-color: #f0d1a8; }
+.countCompletesTask { background-color: #c4a49f; }
+.countUrgentTask { background-color: #f88786; }

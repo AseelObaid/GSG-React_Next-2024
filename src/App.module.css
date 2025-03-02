@@ -1,0 +1,25 @@
+html,body{
+    margin: 0;
+    padding: 0;
+}
+.appContainer {
+    min-height: 100vh;
+    background-color: #f1dfc9;
+    padding: 20px;
+
+}
+.today {
+    color: #f88786;
+    font-family: "Sofia", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+}.part2{
+    display: flex;
+    justify-content: space-between;
+}
+.part1 {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
